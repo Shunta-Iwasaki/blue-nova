@@ -177,22 +177,26 @@ export default function ProductFirstView({ data, reviews }: Props) {
                         className="modalThumbSwiper"
                     >
                         <SwiperSlide>
-                            <Image
-                                src={`/product-img/img_${data.id}.png`}
-                                alt=""
-                                width={200}
-                                height={100}
-                            />
+                            <div className={styles.images}>
+                                <Image
+                                    src={`/product-img/img_${data.id}.png`}
+                                    alt=""
+                                    width={200}
+                                    height={100}
+                                />
+                            </div>
                         </SwiperSlide>
 
                         {Array.from({ length: 5 }).map((_, index) => (
                             <SwiperSlide key={index}>
-                                <Image
-                                    src={`/product-img/img_general_${index}.png`}
-                                    alt=""
-                                    width={300}
-                                    height={300}
-                                />
+                                <div className={styles.images}>
+                                    <Image
+                                        src={`/product-img/img_general_${index}.png`}
+                                        alt=""
+                                        width={300}
+                                        height={300}
+                                    />
+                                </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>

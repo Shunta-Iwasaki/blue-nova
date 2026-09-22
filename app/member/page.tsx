@@ -80,7 +80,7 @@ export default function Member() {
                         height={240}
                     />
                     <div className={styles.purchaseText}>
-                        <div className={styles.purchaseInfo}>
+                        <div className={styles.purchaseTextInfo}>
                             <p className={styles.purchaseName}>{item.name}</p>
                             <p className={styles.purchaseQuan}>
                                 ×　{item.quan}

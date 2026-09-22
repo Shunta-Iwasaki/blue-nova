@@ -12,7 +12,7 @@ type CartContextType = {
     cart: CartItemType[];
     addCart: (productId: string, name: string, quan?: number) => void;
     removeCart: (productId: string) => void;
-    updateQuan: (productId: string, name: string, quan: number) => void;
+    updateQuan: (productId: string, quan: number) => void;
     clearCart: () => void;
 };
 
@@ -75,20 +75,16 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         showToast("カートから削除しました");
     };
 
-    const updateQuan = (productId: string, name: string, quan: number) => {
+    const updateQuan = (productId: string, quan: number) => {
         if (quan <= 0) {
             removeCart(productId);
             return;
         }
-        setCart((prev) => {
-            const existing = prev.find((item) => item.productId === productId);
-            if (existing) {
-                return prev.map((item) =>
-                    item.productId === productId ? { ...item, quan } : item,
-                );
-            }
-            return [...prev, { productId, name, quan }];
-        });
+        setCart((prev) =>
+            prev.map((item) =>
+                item.productId === productId ? { ...item, quan } : item,
+            ),
+        );
     };
 
     const clearCart = () => {
