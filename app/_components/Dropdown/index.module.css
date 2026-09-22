@@ -1,0 +1,17 @@
+.triggerText:hover {
+    opacity: 0.5;
+}
+.triggerText {
+    display: flex;
+    align-items: center;
+}
+.triggerText::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    transform: rotate(45deg) translateY(-2px);
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+}

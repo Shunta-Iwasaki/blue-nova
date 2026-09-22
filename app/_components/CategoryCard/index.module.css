@@ -1,0 +1,61 @@
+.card {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+.icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 1rem;
+    box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.15);
+}
+.icon img {
+    width: 60%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rpg {
+    background: linear-gradient(135deg, #ff4649 0%, #fa1014 100%);
+}
+.action {
+    background: linear-gradient(135deg, #d146ff 0%, #c710fa 100%);
+}
+.shooter {
+    background: linear-gradient(135deg, #ffac46 0%, #fa4310 100%);
+}
+.adventure {
+    background: linear-gradient(135deg, #40f146 0%, #10ea14 100%);
+}
+.simulation {
+    background: linear-gradient(135deg, #4687ff 0%, #1020fa 100%);
+}
+.sports {
+    background: linear-gradient(135deg, #3de8e8 0%, #0cbfd3 100%);
+}
+.text {
+    display: block;
+}
+.text h3 {
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 0.8rem;
+    color: var(--color-text-gray) !important;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem 0.75rem;
+    }
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
+}

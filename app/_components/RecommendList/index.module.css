@@ -1,0 +1,13 @@
+.title {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    display: inline-block;
+}
+.card {
+    width: 100% !important;
+}

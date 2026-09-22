@@ -1,0 +1,40 @@
+.wrapper {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.wrapper h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        var(--color-primary),
+        var(--color-primary-light)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.thanksIcon {
+    margin: 0 auto;
+}
+.snsArea {
+    width: 400px;
+    background-color: #fff;
+    margin: 1rem auto 0;
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    text-align: center;
+}
+.snsArea h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+    .snsArea {
+        width: 94%;
+        max-width: 360px;
+    }
+}

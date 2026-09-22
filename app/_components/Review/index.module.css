@@ -1,0 +1,39 @@
+.stars {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.star {
+    font-size: 1rem;
+    position: relative;
+}
+
+/* 満タン */
+.star.full {
+    color: gold;
+}
+
+/* 空 */
+.star.empty {
+    color: #ccc;
+}
+
+/* 半分 */
+.star.half {
+    color: #ccc;
+}
+
+.star.half::before {
+    content: "★";
+    position: absolute;
+    color: gold;
+    width: 50%;
+    overflow: hidden;
+}
+.count {
+    display: inline;
+    font-size: 0.8rem;
+    color: var(--color-text-gray);
+    margin-left: 0.5rem;
+}

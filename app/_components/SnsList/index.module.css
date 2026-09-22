@@ -1,0 +1,15 @@
+.iconNavs {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: max-content;
+}
+.iconNav {
+    background-color: #1e2939;
+    border: 1px solid #364153;
+    padding: 12px;
+    border-radius: 0.75rem;
+}
+.youtube {
+    scale: 0.99;
+}

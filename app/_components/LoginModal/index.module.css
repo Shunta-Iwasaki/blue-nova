@@ -1,0 +1,43 @@
+.loginTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.loginModal {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 16px;
+}
+.loginInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    width: 400px;
+    background-color: #f5f6f8;
+}
+.loginButton {
+    color: #fff;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin-top: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+.registButton {
+    color: var(--color-primary);
+    width: 100%;
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.6rem;
+}
+.loginError {
+    color: var(--color-error-red);
+    text-align: center;
+}

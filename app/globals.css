@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
+html {
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+    /* ===== Brand Color ===== */
+    --color-primary: #0066cc;
+    --color-primary-light: #4c7cff;
+    --color-primary-pale: #ecf1ff;
+    --color-primary-dark: #1746c2;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+    /* ===== Base Color ===== */
+    --color-bg: #ffffff;
+    --color-text: #222222;
+    --color-text-gray: #99a1af;
+    --color-text-dark-gray: #56595f;
+    --color-border: #e5e5e5;
+    --color-bg-gray: #cdd0d5;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    /* ===== UI Color ===== */
+    --color-light-gray: #e5e5e5;
+    --color-accent: #ff7a18;
+    --color-gray: #777777;
+    --color-error-red: #fe3333;
+
+    --max-width: 1200px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    --swiper-navigation-color: #fff;
+}
+
+.rpg {
+    background: linear-gradient(135deg, #ff4649 0%, #fa1014 100%);
+}
+.action {
+    background: linear-gradient(135deg, #d146ff 0%, #c710fa 100%);
+}
+.shooter {
+    background: linear-gradient(135deg, #ffac46 0%, #fa4310 100%);
+}
+.adventure {
+    background: linear-gradient(135deg, #40f146 0%, #10ea14 100%);
+}
+.simulation {
+    background: linear-gradient(135deg, #4687ff 0%, #1020fa 100%);
+}
+.sports {
+    background: linear-gradient(135deg, #3de8e8 0%, #0cbfd3 100%);
 }

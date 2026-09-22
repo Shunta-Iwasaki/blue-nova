@@ -1,0 +1,35 @@
+.categorySearch {
+    background: linear-gradient(
+        315deg,
+        #1e4a8f 14.6%,
+        #0450b7 28.76%,
+        #0560a9 42.92%,
+        #0670b7 57.08%,
+        #0680d2 71.24%,
+        #078eda 85.4%
+    );
+    padding: 2rem 0 1.5rem;
+    border-radius: 1rem;
+}
+.categorySearch h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.categorySearch p {
+    color: #fff;
+    text-align: center;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    padding: 3rem;
+}
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: unset;
+        padding: 1.5rem;
+    }
+}

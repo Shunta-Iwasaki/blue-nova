@@ -1,0 +1,32 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 100%;
+  background-color: #F5F6F8;
+}
+
+.search img {
+  transform: translateY(-1px);
+}
+
+.search:focus-within {
+  border-color: #b3b3b3;
+}
+
+.searchInput {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}

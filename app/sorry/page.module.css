@@ -1,0 +1,21 @@
+.wrapper {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.wrapper h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        var(--color-primary),
+        var(--color-primary-light)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.sorryIcon {
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+}

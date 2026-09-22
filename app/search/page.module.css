@@ -1,0 +1,17 @@
+.wrapper {
+    padding: 2rem 1rem;
+}
+.wrapper h2 {
+    font-size: 1.25rem;
+}
+.wrapper h2 span {
+    font-style: italic;
+}
+.wrapper p {
+    margin-top: 1rem;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: var(--max-width);
+    width: 90%;
+    margin: 1rem auto 0;
+}
+.itemList {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 94%;
+    }
+}

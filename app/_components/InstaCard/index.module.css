@@ -1,0 +1,28 @@
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.textWrapper {
+    margin: 0.25rem;
+}
+.userName {
+    color: var(--color-text-gray);
+}
+.userName::before {
+    content: "@";
+}
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* ← ここで行数指定 */
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .card img {
+        height: 120px;
+    }
+}

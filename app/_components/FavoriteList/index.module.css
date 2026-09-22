@@ -1,0 +1,15 @@
+.list {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    display: grid;
+    padding: 0 1.5rem 2rem;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 12px;
+        padding: 0 1rem 1rem;
+    }
+}

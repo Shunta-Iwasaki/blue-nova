@@ -1,0 +1,143 @@
+.firstView {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.slideArea {
+    display: block;
+    width: 49%;
+}
+:global(.mainSwiper) {
+    margin-bottom: 1rem;
+}
+:global(.swiper-thumbs .swiper-slide:not(.swiper-slide-thumb-active)) {
+    opacity: 0.7;
+}
+.images {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.images:hover {
+    opacity: 0.7;
+}
+.slideModal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+.slideModalOpen {
+    opacity: 1;
+    visibility: visible;
+}
+.slideModalContent {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+:global(.modalSwiper) {
+    height: 80%;
+    margin-bottom: 1%;
+}
+.closeButton {
+    background-color: rgba(64, 64, 64, 0.8);
+    padding: 0.025rem 1rem;
+    border-radius: 100%;
+    font-size: 2rem;
+    top: -3%;
+    right: -3%;
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+}
+.info {
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width: 49%;
+    padding: 1rem;
+}
+.info__top {
+    display: flex;
+}
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.priceArea {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+.price {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+.originalPrice {
+    text-decoration: line-through;
+    color: var(--color-text-gray);
+}
+.description {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+.iconArea {
+    margin: 2rem 0;
+}
+.iconText {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.purchaseButton {
+    display: block;
+    width: 90%;
+    margin: 0 auto 0.5rem;
+}
+.purchaseNow {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    color: var(--color-primary);
+    background-color: #fff;
+    padding: 0.6rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.6rem;
+}
+.cartButton {
+    color: #fff;
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+@media (max-width: 768px) {
+    .firstView {
+        flex-flow: column;
+    }
+    .slideArea {
+        width: 100%;
+    }
+    :global(.swiper-thumbs) {
+        display: none;
+    }
+    .info {
+        width: 100%;
+    }
+}

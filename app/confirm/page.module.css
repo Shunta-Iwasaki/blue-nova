@@ -1,0 +1,56 @@
+.wrapper {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+.wrapper h2 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+}
+.wrapper div {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.5rem;
+}
+.wrapper div:nth-child(even) {
+    background-color: var(--color-primary-pale);
+}
+.wrapper dt {
+    font-weight: bold;
+    width: 30%;
+}
+.wrapper dd {
+    padding-left: 1rem;
+    width: 70%;
+}
+.thanksIcon {
+    margin: 0 auto;
+}
+.returnButton,
+.toProcessButton {
+    display: block;
+    width: 240px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.75rem;
+}
+.returnButton {
+    background-color: #fff;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    margin: 3rem auto 0;
+}
+.toProcessButton {
+    background: linear-gradient(90deg, #ff6900 0%, #f54900 100%);
+    color: #fff;
+    margin: 1rem auto 0;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 96%;
+    }
+}

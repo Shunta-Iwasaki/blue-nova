@@ -1,0 +1,143 @@
+.header {
+    position: sticky;
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    background-color: #fff;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.02) 100%
+    );
+    z-index: 999;
+}
+.logoLink {
+    height: 48px;
+    width: auto;
+}
+.logoLink img {
+    height: 100%;
+    width: auto;
+}
+.items {
+    display: flex;
+    gap: 1.5rem;
+}
+.item > a {
+    width: max-content;
+    display: block;
+}
+.item {
+    transition: opacity 0.2s ease;
+}
+.item:not(.item__category):hover {
+    opacity: 0.5;
+}
+.dropItem {
+    width: 200px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: opacity 0.2s ease;
+}
+.dropItem {
+    width: 200px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: opacity 0.2s ease;
+}
+.dropItem:hover {
+    background-color: var(--color-bg-gray);
+}
+.dropItem > div {
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}
+.dropItem a {
+    width: 100%;
+    display: inline-block;
+}
+.icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.wrapper {
+    position: relative;
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    z-index: 999;
+}
+.rogButton {
+    display: inline-block;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+.hamburgerMenu {
+    display: none;
+}
+.cart {
+    position: relative;
+}
+.cartNum {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: var(--color-primary);
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 80px;
+        padding: 0.75rem;
+    }
+    .logoLink {
+        height: 32px;
+    }
+    .SearchField {
+        display: none;
+    }
+    .items {
+        display: none;
+    }
+    .hamburgerMenu {
+        display: block;
+    }
+    .icons {
+        gap: 0.5rem;
+    }
+    .cartNum {
+        top: -0.5rem;
+        right: -0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+}

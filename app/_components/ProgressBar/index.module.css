@@ -1,0 +1,93 @@
+.progressBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 0 auto 2rem;
+    max-width: 920px;
+    position: relative;
+}
+.progressBarLine {
+    position: absolute;
+    width: 80%;
+    top: 20px;
+    left: 90px;
+    z-index: -1;
+}
+.progress {
+    display: inline-block;
+    position: relative;
+}
+.progress:not(:last-child)::after,
+.progress:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-bg-gray);
+    z-index: -1;
+}
+.progress:not(:first-child)::before {
+    right: 50%;
+}
+.progress:not(:last-child)::after {
+    left: 50%;
+}
+.progressBarCircle {
+    background-color: var(--color-bg-gray);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressBarCircle.current {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.progressBarCircle.comp {
+    background-color: var(--color-accent);
+}
+.progressBarCircle.comp::before {
+    content: "";
+    border: 1px solid #fff;
+    width: 10px;
+    transform: rotate(45deg) translate(4px, 0px);
+}
+.progressBarCircle.comp::after {
+    content: "";
+    border: 1px solid #fff;
+    width: 16px;
+    transform: rotate(-45deg) translate(-1px, -1.25px);
+}
+.progressBarText {
+    color: var(--color-text);
+}
+.progressBarText.current {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+.isPc {
+    display: inline;
+}
+.isSp {
+    display: none;
+}
+@media (max-width: 768px) {
+    .progressBar {
+        padding: 0 0.75rem;
+    }
+    .progressBarText {
+        width: 88px;
+        text-align: center;
+    }
+    .isPc {
+        display: none;
+    }
+    .isSp {
+        display: block;
+    }
+}
